@@ -1,0 +1,110 @@
+/* || RESET */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input, 
+button, 
+textarea {
+    font: inherit;
+}
+
+/* || VARIABLES */
+
+:root{
+    /* || COLORS */
+    --LIGHT-RED: hsl(0, 100%, 67%);
+    --ORANGEY-YELLOW: hsl(39, 100%, 56%);
+    --GREEN-TEAL: hsl(166, 100%, 37%);
+    --COBALT-BLUE: hsl(234, 85%, 45%);
+    --BG-GRADIENT: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    --BG-GRADIENT-circle: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    --WHITE: hsl(0, 0%, 100%);
+    --PALE-BLUE: hsl(221, 100%, 96%);
+    --LIGHT-LAVENDER: hsl(241, 100%, 89%);
+    --DARK-GRAY-BLUE: hsl(224, 30%, 27%);
+
+
+}
+
+html {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+h1 {
+    color: var(--WHITE);
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.card__result {
+    background-image: var(--BG-GRADIENT);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.card__result p {
+    color: var(--PALE-BLUE);
+    margin: 10px 60px 45px 60px;
+    text-align: center;
+}
+
+.card__result-h2 {
+    color: var(--PALE-BLUE);
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.card__result-score {
+    margin-top: 30px;
+    width: 140px;
+    height: 140px;
+    background-image: var(--BG-GRADIENT-circle);
+    border-radius: 70px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.card__result-score p {
+    color: var(--PALE-BLUE);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card__result-score p:first-child {
+    color: var(--WHITE);
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: 40px;
+}
+
+.card__summary {
+    margin: 30px;
+}
+
+.button {
+    background-color: var(--DARK-GRAY-BLUE);
+    color: var(--WHITE);
+    border: none;
+    height: 56px;
+    border-radius: 28px;
+    padding: 20px 120px;
+
+}
+.card__summary div {
+    background-color: var(--LIGHT-LAVENDER);
+}
