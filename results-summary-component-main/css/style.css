@@ -95,7 +95,25 @@ h1 {
 .card__summary {
     margin: 30px;
 }
+.card__summary-h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 82.3%;
+    color: var(--DARK-GRAY-BLUE);
+}
 
+.card__summary-reaction {
+    background-color: hsla(6, 100%, 98%, 1);
+    border-radius: 10px;
+    height: 55px;
+    margin-top: 25px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.card__summary-reaction p:first-child {
+    color: var(--LIGHT-RED);
+}
 .button {
     background-color: var(--DARK-GRAY-BLUE);
     color: var(--WHITE);
@@ -104,7 +122,4 @@ h1 {
     border-radius: 28px;
     padding: 20px 120px;
 
-}
-.card__summary div {
-    background-color: var(--LIGHT-LAVENDER);
 }
