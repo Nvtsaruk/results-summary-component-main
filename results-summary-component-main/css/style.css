@@ -95,6 +95,34 @@ h1 {
 .card__summary {
     margin: 30px;
 }
+
+.flex {
+    border-radius: 10px;
+    height: 55px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card__summary-reaction {
+    
+}
+
+.card_summary-img img {
+    margin-left: 28px;
+}
+.gray {
+    color: #989793;
+    margin-right: 20px;
+}
+.card__summary span {
+    color: #000;
+}
 .card__summary-h2 {
     font-weight: 700;
     font-size: 18px;
@@ -103,17 +131,32 @@ h1 {
 }
 
 .card__summary-reaction {
-    background-color: hsla(6, 100%, 98%, 1);
-    border-radius: 10px;
-    height: 55px;
-    margin-top: 25px;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
+    background-color: hsla(6, 100%, 98%, 1);  
 }
 .card__summary-reaction p:first-child {
     color: var(--LIGHT-RED);
 }
+
+.card__summary-memory {
+    background-color: hsla(42, 100%, 97%, 1);  
+}
+.card__summary-memory p:first-child {
+    color: var(--ORANGEY-YELLOW);  
+}
+
+.card__summary-verbal {
+    background-color: hsla(173, 53%, 97%, 1);  
+}
+.card__summary-verbal p:first-child {
+    color: var(--GREEN-TEAL);  
+}
+.card__summary-visual {
+    background-color: hsla(240, 71%, 97%, 1);  
+}
+.card__summary-visual p:first-child {
+    color: var(--COBALT-BLUE);
+}
+
 .button {
     background-color: var(--DARK-GRAY-BLUE);
     color: var(--WHITE);
