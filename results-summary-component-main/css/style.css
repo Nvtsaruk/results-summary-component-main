@@ -176,6 +176,17 @@ h1 {
         grid-template-columns: 1fr 1fr;
         width: 736px;
         height: 512px;
+        margin: 284px auto;
+        border-radius: 30px;
+        background-color: white;
+        filter: drop-shadow(10px 10px 5px hsla(0, 0%, 0%, 0.123));
+
+    }
+    .card__result {
+        border-radius: 30px;
+    }
+    .card__summary {
+        margin-top: 45px;
     }
 }
 footer {
