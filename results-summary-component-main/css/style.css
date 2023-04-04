@@ -41,10 +41,14 @@ textarea {
 html {
     font-family: 'Hanken Grotesk', sans-serif;
 }
+
 h1 {
     color: var(--WHITE);
     font-weight: 500;
     margin-top: 30px;
+}
+.card {
+    display: grid;
 }
 
 .card__result {
@@ -94,12 +98,13 @@ h1 {
 
 .card__summary {
     margin: 30px;
+    text-align: center;
 }
 
 .flex {
     border-radius: 10px;
     height: 55px;
-    margin-top: 25px;
+    margin-top: 17px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -109,12 +114,10 @@ h1 {
     justify-content: space-between;
     align-items: center;
 }
-.card__summary-reaction {
-    
-}
 
-.card_summary-img img {
+.card__summary-img img {
     margin-left: 28px;
+    margin-right: 15px;
 }
 .gray {
     color: #989793;
@@ -164,5 +167,23 @@ h1 {
     height: 56px;
     border-radius: 28px;
     padding: 20px 120px;
+    margin-top: 25px;
 
 }
+
+@media (min-width: 375px) {
+    .card {
+        grid-template-columns: 1fr 1fr;
+        width: 736px;
+        height: 512px;
+    }
+}
+footer {
+    margin-top: 25px;
+    display:flex;
+}
+footer div {
+    margin: 0 auto;
+    display: inline-block;
+    }
+  
